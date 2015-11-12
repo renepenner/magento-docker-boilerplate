@@ -1,0 +1,6 @@
+.idea
+vendor
+tools
+htdocs
+data/*
+!data/.gitkeep

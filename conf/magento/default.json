@@ -1,0 +1,12 @@
+{
+    "name": "magento-boilerplate",
+    "domain": "magento.local",
+    "magento": {
+        "mysql": {
+            "host": "mysql",
+            "name": "boilerplate",
+            "user": "root",
+            "pass": "pw"
+        }
+    }
+}

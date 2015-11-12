@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <install>
+            <date><![CDATA[Fri, 15 Aug 2014 10:27:48 +0000]]></date>
+        </install>
+        <crypt>
+            <key><![CDATA[e1fbc752fd4de3447bbc824328b95dbc]]></key>
+        </crypt>
+        <disable_local_modules>false</disable_local_modules>
+        <resources>
+            <db>
+                <table_prefix><![CDATA[]]></table_prefix>
+            </db>
+            <default_setup>
+                <connection>
+                    <host><![CDATA[{{magento/mysql/host}}]]></host>
+                    <username><![CDATA[{{magento/mysql/user}}]]></username>
+                    <password><![CDATA[{{magento/mysql/pass}}]]></password>
+                    <dbname><![CDATA[{{magento/mysql/name}}]]></dbname>
+                    <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
+                    <model><![CDATA[mysql4]]></model>
+                    <type><![CDATA[pdo_mysql]]></type>
+                    <pdoType><![CDATA[]]></pdoType>
+                    <active>1</active>
+                </connection>
+            </default_setup>
+        </resources>
+        <session_save><![CDATA[files]]></session_save>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <frontName><![CDATA[admin]]></frontName>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

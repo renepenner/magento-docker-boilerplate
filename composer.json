@@ -1,0 +1,50 @@
+{
+    "name": "renepenner/magento-default",
+    "minimum-stability": "dev",
+    "require": {
+        "aoepeople/composer-installers": "*",
+        "aoepeople/magento-deployscripts": "1.0.3",
+        "OpenMage/magento_community": "1.9.2.2",
+        "renepenner/MageTools": "*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/AOEpeople/composer-installers.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AOEpeople/EnvSettingsTool.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AOEpeople/magento-deployscripts.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/renepenner/MageTools.git"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "OpenMage/magento_community",
+                "type": "magento-source",
+                "version": "1.9.2.2",
+                "dist": {
+                    "url": "https://github.com/OpenMage/magento-mirror/archive/1.9.2.2.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "config" : {
+        "bin-dir": "tools"
+    },
+
+    "scripts": {
+        "post-install-cmd": [
+            "tools/create-localxml.php",
+            "chmod 777 htdocs/var htdocs/media"
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+nginx:
+  image: nginx:latest
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - .:/var/www/html
+  links:
+    - php:php
+  command: nginx -c /var/www/html/conf/nginx/nginx.conf
+
+mysql:
+  image: mysql:latest
+  environment:
+    - MYSQL_ROOT_PASSWORD=pw
+    - MYSQL_DATABASE=boilerplate
+  volumes:
+    - ./conf/mysql:/etc/mysql
+    - ./data/mysql:/var/lib/mysql
+
+php:
+  image: renepenner/php-fpm-magento
+  volumes:
+    - .:/var/www/html
+  links:
+    - mysql:mysql

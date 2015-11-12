@@ -1,0 +1,140 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "5621eb7d0a5eb67e5c23284755031dbf",
+    "content-hash": "7969e931621c104fc8384aefa9a3d955",
+    "packages": [
+        {
+            "name": "OpenMage/magento_community",
+            "version": "1.9.2.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/OpenMage/magento-mirror/archive/1.9.2.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "magento-source"
+        },
+        {
+            "name": "aoepeople/composer-installers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AOEpeople/composer-installers.git",
+                "reference": "9e8c507177fd9d837e3562c7dd71ee35e684e1f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AOEpeople/composer-installers/zipball/9e8c507177fd9d837e3562c7dd71ee35e684e1f4",
+                "reference": "9e8c507177fd9d837e3562c7dd71ee35e684e1f4",
+                "shasum": ""
+            },
+            "replace": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Aoepeople\\ComposerInstallers\\Installer"
+            },
+            "autoload": {
+                "psr-0": {
+                    "Aoepeople\\ComposerInstallers\\": "src/"
+                }
+            },
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Fabrizio Branca",
+                    "email": "{firstname}.{lastname}@aoe.com"
+                }
+            ],
+            "description": "A simple composer installer",
+            "keywords": [
+                "Magento",
+                "installer",
+                "modman"
+            ],
+            "support": {
+                "source": "https://github.com/AOEpeople/composer-installers/tree/v0.0.1",
+                "issues": "https://github.com/AOEpeople/composer-installers/issues"
+            },
+            "time": "2014-03-07 20:11:42"
+        },
+        {
+            "name": "aoepeople/magento-deployscripts",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AOEpeople/magento-deployscripts.git",
+                "reference": "9082780ced76305296c6969f2d0efbe59deb59f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AOEpeople/magento-deployscripts/zipball/9082780ced76305296c6969f2d0efbe59deb59f2",
+                "reference": "9082780ced76305296c6969f2d0efbe59deb59f2",
+                "shasum": ""
+            },
+            "bin": [
+                "install.sh",
+                "n98-magerun.phar",
+                "modman",
+                "systemstorage_import.sh"
+            ],
+            "type": "library",
+            "authors": [
+                {
+                    "name": "Fabrizio Branca"
+                }
+            ],
+            "description": "Collection of scripts for Magento builds and deployments",
+            "support": {
+                "source": "https://github.com/AOEpeople/magento-deployscripts/tree/v1.0.3",
+                "issues": "https://github.com/AOEpeople/magento-deployscripts/issues"
+            },
+            "time": "2014-11-19 17:22:23"
+        },
+        {
+            "name": "renepenner/MageTools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/renepenner/MageTools.git",
+                "reference": "2d6217897009c1c1dfb10d489d9d9f8b1ecfc553"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/renepenner/MageTools/zipball/2d6217897009c1c1dfb10d489d9d9f8b1ecfc553",
+                "reference": "2d6217897009c1c1dfb10d489d9d9f8b1ecfc553",
+                "shasum": ""
+            },
+            "bin": [
+                "create-localxml.php"
+            ],
+            "type": "library",
+            "authors": [
+                {
+                    "name": "René Penner"
+                }
+            ],
+            "description": "Collection of scripts for Magento",
+            "support": {
+                "source": "https://github.com/renepenner/MageTools/tree/v0.0.2",
+                "issues": "https://github.com/renepenner/MageTools/issues"
+            },
+            "time": "2015-11-08 17:24:55"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
