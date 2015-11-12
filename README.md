@@ -7,8 +7,8 @@ A very basic docker/composer Infrastructure Setup to start a develop machine in 
 follow the instructions below:
 
 ```
-git clone https://bitbucket.org/renepenner/magento-boilerplate
-cd magento-boilerplate
+git clone git@github.com:renepenner/magento-docker-boilerplate.git
+cd magento-docker-boilerplate
 composer install
 docker-compose up -d
 # wait some seconds mysql need to startup fist time
